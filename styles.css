@@ -10,6 +10,10 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+::selection {
+	background-color: rgb(17, 173, 173);
+}
+
 /* Header Navigation */
 header {
 	height: 100vh;
@@ -108,8 +112,10 @@ li a {
 }
 
 .hero--content--text {
-	width: 49rem;
-	margin-top: 10rem;
+	/* width: 49rem; */
+	width: 45%;
+	/* margin-top: 10rem; */
+	margin-top: 10%;
 	z-index: 10;
 }
 
@@ -139,13 +145,13 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 55rem;
+	width: 100%;
 }
 
 .input--field {
-	width: 55rem;
+	width: 100%;
 	/* height: 50px; */
-	padding: 2.4rem;
+	padding: 2.2rem 2.4rem;
 	margin: 3rem 0;
 	color: #747474;
 	border: none;
@@ -159,7 +165,8 @@ h3 {
 }
 
 .btn--search {
-	margin-left: -12rem;
+	/* margin-left: -12rem; */
+	margin-left: -24%;
 }
 
 .hero--content--text p {
@@ -180,11 +187,14 @@ h3 {
 	justify-content: space-between;
 	align-items: flex-start;
 	position: absolute;
+	bottom: 5%;
+	left: 0%;
+	width: 25%;
 }
 
 .hero--quote--text {
 	padding: 5px;
-	width: 36rem;
+	/* width: 36rem; */
 	font-size: 1.4rem;
 	font-weight: 300;
 	color: #8d8d8d;
@@ -193,7 +203,7 @@ h3 {
 
 .quote--comma {
 	align-self: flex-end;
-	margin-left: -1rem;
+	margin-left: -5%;
 }
 
 /* What should be animated */
@@ -203,14 +213,17 @@ h3 {
 	align-self: flex-end;
 	/* z-index: 10; */
 	height: 100%;
+	width: 45%;
 }
 
 .hero--img {
 	display: flex;
 	align-self: flex-end;
 	margin: 0;
-	height: 50rem;
-	margin-right: -14rem;
+	/* height: 50rem; */
+	height: 90%;
+	/* margin-right: -14rem; */
+	margin-right: -20%;
 
 	background-image: url('/images/lines.svg');
 	background-position: center;
@@ -229,7 +242,7 @@ h3 {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding: 6rem 20rem;
+	padding: 6rem 0rem;
 }
 
 .reviews--heading {
@@ -247,8 +260,9 @@ h3 {
 }
 
 .reviews--cards {
-	margin: 0 0px;
+	margin: 0px;
 	padding: 25px 0;
+	width: 75%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -259,15 +273,16 @@ h3 {
 .review--card {
 	margin: 2rem 0rem;
 	border-radius: 6px;
+	width: 28%;
 	display: flex;
 	flex-direction: column;
-	align-items: stretch;
+	align-items: flex-start;
 	justify-content: space-between; /*center*/
 	box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.04);
 }
 
 .comment {
-	padding: 1.4rem 3rem;
+	padding: 1.4rem 3.2rem;
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
@@ -289,7 +304,8 @@ h3 {
 }
 
 .comment--text {
-	width: 24rem;
+	/* width: 24rem; */
+	width: 85%;
 	font-size: 1.4rem;
 	font-weight: 400;
 	color: #8d8d8d;
@@ -297,7 +313,8 @@ h3 {
 }
 
 .comment--tag {
-	width: 27rem;
+	/* width: 27rem; */
+	width: 100%;
 	margin: 0;
 	display: flex;
 	flex-direction: row;
@@ -338,6 +355,7 @@ h3 {
 	justify-content: flex-start;
 	align-items: center;
 	padding: 1.6rem 3rem;
+	align-self: stretch;
 }
 
 .profile--pitcure {
@@ -370,11 +388,12 @@ h3 {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 6rem 20rem;
+	padding: 6rem 10rem 6rem 20rem;
 }
 
 .subscribe--content {
-	width: 65rem;
+	/* width: 65rem; */
+	width: 51%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -382,7 +401,8 @@ h3 {
 
 .subscribe--text {
 	margin: 5px 0 0;
-	width: 55rem;
+	/* width: 55rem; */
+	width: 88%;
 	padding: 10px 0;
 	line-height: 2.2rem;
 	font-size: 1.4rem;
@@ -397,7 +417,8 @@ h3 {
 }
 
 .input--email {
-	width: 44rem;
+	/* width: 44rem; */
+	width: 65%;
 	/* height: 50px; */
 	padding: 1.6rem 2rem;
 	margin: 2rem 0;
@@ -405,6 +426,7 @@ h3 {
 	border: none;
 	outline: none;
 	border-radius: 6px;
+	margin-right: 2rem;
 }
 
 .btn--submit {
@@ -420,13 +442,19 @@ h3 {
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #f8f8f8;
-	padding: 1rem 14rem;
+	padding: 1rem 0;
+	width: 85%;
+	margin: 0 auto;
 }
 
 /* Advert */
 .advert {
 	background-color: #ffffff;
-	padding: 8rem 14rem;
+	padding: 8rem 0rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .advert--group {
@@ -435,11 +463,13 @@ h3 {
 	justify-content: space-between;
 	align-items: center;
 	padding: 3rem 0;
+	width: 85%;
+	height: 40vh;
 }
 
 .advert--card {
-	width: 36rem;
-	height: 31rem;
+	width: 30%;
+	height: 100%;
 	background-color: #fbfbfb;
 	border: 1px solid #d6d6d6;
 	border-radius: 4px;
@@ -564,6 +594,87 @@ footer ul li a {
 	font-weight: 300;
 }
 
+@media only screen and (max-width: 1400px) {
+	.hero--img--div {
+		display: flex;
+		align-self: flex-end;
+	}
+	.hero--img {
+		display: flex;
+		align-self: flex-end;
+		margin-right: -20%;
+		margin: 0;
+		margin-bottom: 0%;
+		height: 70%;
+	}
+	.reviews--cards {
+		width: 80%;
+	}
+
+	.review--card {
+		width: 30%;
+	}
+
+	.comment--text {
+		font-size: 1.4rem;
+	}
+
+	.comment--tag-name {
+		font-size: 1.2rem;
+	}
+
+	.comment--tag-company {
+		font-size: 1.2rem;
+	}
+
+	.comment--tag-company img {
+		width: 1.4rem;
+	}
+
+	.subscribe {
+		background-color: #f8f8f8;
+		font-size: 1.6rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 6rem 10rem 6rem 16rem;
+	}
+
+	.subscribe--content {
+		/* width: 65rem; */
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.subscribe--text {
+		width: 84%;
+		padding: 10px 0;
+		line-height: 2.2rem;
+		font-size: 1.4rem;
+	}
+
+	.input--subscribe {
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+	}
+
+	.input--email {
+		/* width: 44rem; */
+		width: 65%;
+		/* height: 50px; */
+		padding: 1.6rem 2rem;
+		margin: 2rem 0;
+		color: #747474;
+		border: none;
+		outline: none;
+		border-radius: 6px;
+	}
+}
+
 @media only screen and (max-width: 1200px) {
 	.header--nav {
 		padding: 0 6rem;
@@ -574,56 +685,34 @@ footer ul li a {
 		display: flex;
 		/* justify-content: center; */
 		align-items: center;
-		margin-top: -10rem;
 	}
 
-	.hero--quote {
-		margin: 6rem 0 0 24rem;
+	.hero--content--text {
+		margin-top: -10%;
 	}
 
-	.hero--img--div {
-		display: flex;
-		align-self: flex-end;
-	}
-	.hero--img {
-		/* display: flex; */
-		margin: 0;
-		height: 42rem;
-		margin-right: -10rem;
-		margin-bottom: -10rem;
+	.reviews--cards {
+		width: 90%;
 	}
 
-	.reviews {
-		padding: 6rem 8rem;
+	.review--card {
+		width: 30%;
 	}
 
 	.comment--text {
-		width: 20rem;
-		font-size: 1.4rem;
-		font-weight: 400;
-		color: #8d8d8d;
-		margin-bottom: 4rem;
+		font-size: 1.2rem;
 	}
 
-	.comment--tag {
-		width: 22rem;
-		margin: 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
+	.comment--tag-name {
+		font-size: 1rem;
 	}
 
-	.subscribe {
-		padding: 6rem 10rem;
+	.comment--tag-company {
+		font-size: 1rem;
 	}
 
-	.subscribe--content {
-		width: 58rem;
-	}
-
-	.subscribe--text {
-		width: 48rem;
+	.comment--tag-company img {
+		width: 1.2rem;
 	}
 
 	.input--email {
@@ -636,22 +725,21 @@ footer ul li a {
 		width: 10rem;
 	}
 
-	.companies {
-		padding: 1rem 10rem;
-	}
-
 	.companies img {
 		width: 14rem;
 	}
 
 	.advert {
 		background-color: #ffffff;
-		padding: 4rem 10rem;
+		padding: 4rem 6rem;
+	}
+
+	.advert--group {
+		width: 95%;
+		height: 40vh;
 	}
 
 	.advert--card {
-		width: 24rem;
-		height: 18rem;
 		font-size: 1.6rem;
 	}
 
@@ -689,19 +777,6 @@ footer ul li a {
 	} */
 }
 
-@media only screen and (max-width: 1100px) {
-	.hero--quote {
-		margin: 6rem 0 0 16rem;
-	}
-
-	.hero--img {
-		margin: 0;
-		height: 36rem;
-		margin-right: -10rem;
-		margin-bottom: -10rem;
-	}
-}
-
 @media only screen and (max-width: 992px) {
 	header {
 		height: 80vh;
@@ -713,11 +788,33 @@ footer ul li a {
 	}
 
 	.hero {
-		padding: 0 10rem;
 		display: flex;
-		/* justify-content: center; */
-		align-items: center;
-		margin-top: -4rem;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		/* align-self: stretch; */
+		padding: 0 10rem;
+		margin: 0;
+		height: calc(100% - 80px);
+		/* width: 100vw; */
+	}
+
+	.hero--content--text {
+		width: 90%;
+		margin-top: 10%;
+	}
+
+	.input--div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 70%;
+		padding: 0;
+	}
+
+	.input--field {
+		width: 100%;
+		padding: 1.6rem;
 	}
 
 	h2 {
@@ -729,30 +826,64 @@ footer ul li a {
 		display: none;
 	}
 
+	.reviews--cards {
+		width: 80%;
+	}
+
+	.review--card {
+		width: 45%;
+	}
+
+	.comment--text {
+		font-size: 1.2rem;
+	}
+
+	.comment--tag-name {
+		font-size: 1rem;
+	}
+
+	.comment--tag-company {
+		font-size: 1rem;
+	}
+
+	.comment--tag-company img {
+		width: 1.2rem;
+	}
+
 	.subscribe {
 		padding: 6rem 6rem;
 	}
 
 	.subscribe--content {
-		width: 50rem;
+		width: 80%;
 	}
 
 	.subscribe--text {
-		width: 40rem;
+		width: 80%;
+	}
+
+	.input--subscribe {
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+		width: 80%;
 	}
 
 	.input--email {
-		width: 26rem;
+		/* width: 44rem; */
+		width: 100%;
+		/* height: 50px; */
 		padding: 1.6rem 2rem;
 		margin: 2rem 0;
+		color: #747474;
+		border: none;
+		outline: none;
+		border-radius: 6px;
+		margin-right: 2rem;
 	}
 
 	.btn--submit {
 		width: 6rem;
-	}
-
-	.companies {
-		padding: 1rem 6rem;
 	}
 
 	.companies img {
@@ -760,14 +891,16 @@ footer ul li a {
 	}
 
 	.advert {
-		background-color: #ffffff;
-		padding: 2rem 8rem;
+		padding: 4rem 4rem;
+	}
+
+	.advert--group {
+		width: 95%;
+		height: 35vh;
 	}
 
 	.advert--card {
-		width: 18rem;
-		height: 14rem;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 
 	.cta--banner {
@@ -785,8 +918,8 @@ footer ul li a {
 	}
 
 	.btn--full {
-		padding: 1rem 1.4rem;
-		font-size: 1.2rem;
+		padding: 1.4rem 2rem;
+		font-size: 1.4rem;
 	}
 
 	footer {
@@ -855,6 +988,11 @@ footer ul li a {
 		background-color: transparent;
 	}
 
+	.btn--full {
+		padding: 1.4rem 2.4rem;
+		font-size: 1.4rem;
+	}
+
 	.header--nav--list.active {
 		left: 0;
 	}
@@ -884,18 +1022,81 @@ footer ul li a {
 		transform: translateY(-8px) rotate(-45deg);
 	}
 
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
 	.input--div {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		width: 42rem;
+		width: 100%;
 		padding: 0;
 	}
 
 	.input--field {
-		width: 40rem;
-		height: 20px;
+		width: 100%;
+		/* height: 20px; */
 		padding: 1.6rem;
+	}
+
+	.reviews--cards {
+		width: 80%;
+	}
+
+	.review--card {
+		width: 45%;
+	}
+
+	.subscribe {
+		padding: 4rem 4rem;
+	}
+	.subscribe--content {
+		width: 100%;
+	}
+
+	.subscribe--text {
+		width: 90%;
+	}
+
+	.input--subscribe {
+		width: 90%;
+	}
+
+	.subscribe img {
+		display: none;
+	}
+
+	.advert {
+		padding: 3rem 3rem;
+	}
+
+	.advert--group {
+		width: 95%;
+		height: 30vh;
+	}
+
+	.advert--card {
+		font-size: 1.2rem;
+	}
+
+	.cta--banner {
+		margin-top: 1rem;
+		width: 75%;
+		height: auto;
+		padding: 2rem 6rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.btn--create-account {
+		padding: 1.4rem 2.4rem;
 	}
 }
 
@@ -944,10 +1145,6 @@ footer ul li a {
 	}
 
 	.btn--full {
-		color: #ffffff;
-		/* border: 1px solid #ff6634; */
-		border-radius: 4px;
-		background-color: #ff6634;
 		padding: 1rem 2.4rem;
 		font-size: 1.2rem;
 	}
@@ -964,7 +1161,15 @@ footer ul li a {
 	}
 
 	.reviews {
-		padding: 3rem 2rem;
+		/* padding: 3rem 2rem; */
+	}
+
+	.reviews--cards {
+		width: 80%;
+	}
+
+	.review--card {
+		width: 85%;
 	}
 
 	.reviews--heading p {
@@ -975,25 +1180,9 @@ footer ul li a {
 		flex-direction: column;
 	}
 
-	.comment--text {
-		width: 22rem;
-		font-size: 1.4rem;
-		font-weight: 400;
-		color: #8d8d8d;
-		margin-bottom: 4rem;
-	}
-
-	.comment--tag {
-		width: 24rem;
-		margin: 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-
 	.subscribe {
 		padding: 4rem 4rem;
+		/* padding: 0; */
 	}
 
 	.subscribe img {
@@ -1001,11 +1190,12 @@ footer ul li a {
 	}
 
 	.subscribe--content {
-		width: 58rem;
+		/* width: 58rem; */
+		width: 100%;
 	}
 
 	.subscribe--text {
-		width: 38rem;
+		width: 100%;
 	}
 
 	.input--subscribe {
@@ -1014,17 +1204,11 @@ footer ul li a {
 	}
 
 	.input--email {
-		width: 30rem;
-		padding: 1.6rem 2rem;
-		margin: 2rem 0;
+		width: 90%;
 	}
 
 	.btn--submit {
 		width: 10rem;
-	}
-
-	.companies {
-		padding: 1rem 2rem;
 	}
 
 	.companies img {
@@ -1033,7 +1217,7 @@ footer ul li a {
 
 	.advert {
 		background-color: #ffffff;
-		padding: 1rem 4rem;
+		padding: 0rem 4rem;
 	}
 
 	.advert--group {
@@ -1041,13 +1225,20 @@ footer ul li a {
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+		width: 95%;
+		height: auto;
+		padding: 0;
+	}
+
+	.advert {
+		padding: 4rem 4rem;
 	}
 
 	.advert--card {
-		width: 24rem;
-		height: 18rem;
-		font-size: 1.6rem;
-		margin: 2rem 0;
+		width: 100%;
+		height: 22rem;
+		font-size: 1.4rem;
+		margin: 3rem 0 3rem;
 	}
 
 	.cta--banner {
